@@ -1,0 +1,53 @@
+/**
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+**/
+
+body {
+  border: 20px #4ccb88 solid;
+  margin: 0;
+  padding: 50px;
+  height: 100%;
+  line-height: 24px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: 'IBM Plex Mono', monospace;
+  padding-top: 30px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666666;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.section-title {
+  font-size: 20px;
+  color: 333333;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.skills-list ul {
+  color: #666666;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.work-card {
+  color: #666666;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 24px 0;
+}
+
+.work-card-title {
+  font-weight: bold;
+}
