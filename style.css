@@ -6,7 +6,7 @@ font-family: 'IBM Plex Sans', sans-serif;
 body {
   border: 20px #4ccb88 solid;
   margin: 0;
-  padding: 50px;
+  padding: 80px 50px;
   height: 100%;
   line-height: 24px;
 }
@@ -15,15 +15,36 @@ ul {
   padding-left: 0;
 }
 
-.title {
+.container.hero {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.container.hero .hero-left {
+  flex: 2;
+  padding-right: 48px;
+}
+
+.container.hero .hero-right {
+  flex: 1;
+}
+
+.hero .title {
   font-size: 28px;
   font-weight: bold;
   color: #4a4a4a;
   font-family: 'IBM Plex Mono', monospace;
-  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
-.subtitle {
+.hero img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.hero .subtitle {
   font-size: 18px;
   color: #666666;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -50,4 +71,32 @@ ul {
 
 .work-card-title {
   font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-item {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+.contact-item {
+  color: #e4550e;
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-item i {
+  font-size: 40px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.contact-item .item-name {
+  font-size: 16px;
 }
