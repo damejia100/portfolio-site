@@ -54,6 +54,8 @@ a {
   color: #333333;
   font-family: 'IBM Plex Mono', monospace;
   padding-bottom: 24px;
+  white-space:pre-wrap;
+  word-break:break-word;
 }
 
 .hero img {
@@ -84,7 +86,7 @@ a {
   color: #666666;
   font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   line-height: 30px;
   padding-top: 24px;
 }
@@ -155,4 +157,14 @@ a {
 
 .heart {
   color: #dc1111;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    border: 10px #4ccb88 solid;
+    padding: 80px 50px 40px 50px;
+  }
+  .container.hero .hero-left {
+    padding-right: 0;
+  }
 }
