@@ -45,6 +45,7 @@ a {
   color: #333333;
   font-weight: bold;
   font-family: 'IBM Plex Mono', monospace;
+  padding-bottom: 24px;
 }
 
 /**hero section**/
@@ -57,7 +58,8 @@ a {
 
 .subtitle {
   flex: 2;
-  padding: 48px 48px 0 0;
+  padding: 48px 64px 0 0;
+  min-width: 300px;
 }
 
 .image {
@@ -94,11 +96,7 @@ img {
   flex-flow: column wrap-reverse;
 }
 
-
-
-
 /**skills section**/
-
 .skills-section {
   flex: 1;
 }
@@ -109,7 +107,6 @@ img {
   display: flex;
   flex-flow: row nowrap;
   line-height: 30px;
-  padding-top: 24px;
 }
 
 .skills-backend {
@@ -154,34 +151,55 @@ img {
   padding-left: 0;
 }
 
-
-
-
-
 /**project section**/
 
-.work-card {
+.project-section {
   color: #666666;
   font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
-  padding: 24px 0;
+  padding: 24px 64px 0 0;
+  min-width: 300px;
 }
 
-.work-card-title {
+.project-card-title {
   font-weight: bold;
 }
 
-.copyright {
+.copyright-section {
  color: #4a4a4a;
  text-align: center;
  font-size: 14px;
  letter-spacing: 5px;
  font-family: 'IBM Plex Sans', sans-serif;
- padding-top: 42px;
+ padding-top: 36px;
 }
 
 .heart {
   color: #dc1111;
+}
+
+@media only screen and (max-width: 762px) {
+  .title {
+    padding-bottom: 48px;
+  }
+  .subtitle {
+    padding-right: 0;
+  }
+  .subtitle-text {
+    padding-bottom: 24px;
+  }
+  .contact-section {
+    padding: 24px 0 48px 0;
+  }
+  .contact-section {
+    justify-content: center;
+  }
+  .project-section {
+    padding-right: 0;
+  }
+  .project-card {
+    padding-bottom: 48px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -196,13 +214,28 @@ img {
     width: 250px;
     height: 250px;
   }
+  #bottom {
+    height: 10px;
+  }
+  .subtitle-text {
+    font-size: 16px;
+
+  }
   .skills-section {
-    order: 1;
-    padding-top: 40px;
+    padding-bottom: 24px;
   }
   .contact-section {
-    order: 2;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    justify-content: space-around;
+  }
+  .contact-item {
+    padding: 0 8px;
+  }
+  .contact-item i {
+    font-size: 28px;
+  }
+  .contact-item .item-name {
+    font-size: 14px;
   }
 }
