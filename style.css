@@ -58,7 +58,7 @@ a {
 
 .subtitle {
   flex: 2;
-  padding: 48px 64px 0 0;
+  padding: 48px 64px 48px 0;
   min-width: 300px;
 }
 
@@ -83,6 +83,7 @@ img {
 .main-section {
   display: flex;
   flex-flow: row wrap-reverse;
+  justify-content: center;
 }
 
 .project-section {
@@ -120,7 +121,6 @@ img {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-content: center;
-  padding-top: 40px;
 }
 
 .contact-item {
@@ -185,8 +185,47 @@ img {
 }
 
 .heart {
+  display: inline-block;
   color: #dc1111;
+  animation: heartBeat 3s ease-in-out 2s infinite;
 }
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
 
 @media only screen and (max-width: 762px) {
   .title {
