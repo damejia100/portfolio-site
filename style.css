@@ -80,19 +80,31 @@ a {
 #nav-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 24px;
+  padding: 20px;
 }
 
 #nav-section a {
   color: #1d1b21;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 22px;
-  padding-right: 38px;
-  transition: transform .75s;
 }
 
 #nav-section a:hover{
   color: #4ccb88;
+}
+
+#nav-section .nav-left a {
+  font-size: 22px;
+  padding-right: 38px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 
@@ -100,6 +112,13 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .nav-right {
@@ -117,20 +136,20 @@ a {
   flex-direction: column;
   padding-right: 16px;
   padding-left: 16px;
-  transition: transform .25s;
+  /* transition: transform .25s; */
 }
 
-.contact-item:hover {
+/* .contact-item:hover {
   transform: scale(1.15);
   color: #4ccb88;
-}
+} */
 
 .contact-item a {
   text-align: center;
 }
 
 .contact-item i {
-  font-size: 32px;
+  font-size: 24px;
   padding-bottom: 16px;
 }
 
