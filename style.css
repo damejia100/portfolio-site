@@ -91,9 +91,56 @@ a {
   transition: transform .75s;
 }
 
-#nav-section a:hover {
-  transform: translateY(10px);
+#nav-section a:hover{
   color: #4ccb88;
+}
+
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* CONTACT ICONS*/
+
+.contact-item {
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: transform .25s;
+}
+
+.contact-item:hover {
+  transform: scale(1.15);
+  color: #4ccb88;
+}
+
+.contact-item a {
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+.contact-item .item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container.contact > div:nth-child(1) {
+  padding-left: 0;
 }
 
 /**ABOUT ME**/
@@ -101,7 +148,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 80px;
+  padding: 60px;
 }
 
 .about-me-text {
@@ -136,6 +183,7 @@ a {
 
 #projects a {
   color: #1d1b21;
+  font-weight: bolder;
 }
 
 #projects img {
@@ -150,6 +198,8 @@ a {
 
 .project-left {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .project-right {
@@ -158,9 +208,10 @@ a {
 
 .project-card-title {
   color: #1d1b21;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 28px;
   padding-bottom: 12px;
+  padding-right: 32px;
 }
 
 #projects .colored {
@@ -168,51 +219,8 @@ a {
   color: #ffffff;
   padding: 40px;
   border-radius: 2px;
-}
-
-
-/* CONTACT */
-
-#contact {
-  flex: 1;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-}
 
-.contact-item {
-  color: #e4550e;
-  font-weight: bold;
-  font-family: 'IBM Plex Mono', monospace;
-  display: flex;
-  flex-direction: column;
-  padding-right: 16px;
-  padding-left: 16px;
-  transition: transform .25s;
-}
-
-.contact-item:hover {
-  transform: scale(1.15);
-  color: #4ccb88;
-}
-
-.contact-item a {
-  text-align: center;
-}
-
-.contact-item i {
-  font-size: 32px;
-  padding-bottom: 16px;
-}
-
-.contact-item .item-name {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.container.contact > div:nth-child(1) {
-  padding-left: 0;
 }
 
 
