@@ -3,17 +3,25 @@ font-family: 'IBM Plex Mono', monospace;
 font-family: 'IBM Plex Sans', sans-serif;
 **/
 
+/* pinkish: #ff5851
+gray: #f8f8f8
+dark blue: #1d1b21
+mint: #4ccb88
+*/
+
 body {
-  border: 20px #4ccb88 solid;
+  background-color: #f8f8f8;
+  border: 40px #ffffff solid;
+  color: #1d1b21;
   margin: 0;
-  padding: 80px 50px 40px 50px;
+  /* padding: 80px 50px 40px 50px; */
   height: 100%;
   line-height: 24px;
 }
 
 #bottom {
-  background: #4ccb88;
-  height: 20px;
+  background: #ffffff;
+  height: 40px;
   width:100%;
   position: fixed;
   left: 0;
@@ -26,43 +34,84 @@ ul {
 
 a {
   text-decoration: none;
-  color: #e4550e;
+}
+
+/* HERO  */
+#hero-section {
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.hero-intro {
+  text-align: center;
+  color: #1d1b21;
   font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333333;
-  font-family: 'IBM Plex Mono', monospace;
+  font-size: 80px;
   white-space:pre-wrap;
   word-break:break-word;
   margin: 0;
   line-height: 1.5;
 }
 
-.section-title {
-  font-size: 20px;
-  color: #333333;
-  font-weight: bold;
-  font-family: 'IBM Plex Mono', monospace;
+.subtitle {
+  font-size: 24px;
   padding-bottom: 24px;
 }
 
-/**hero section**/
-.intro {
+.devis {
+  color: #ff5851;
+}
+
+#hero-section i {
+  color: #1d1b21;
+  font-size: 32px;
+  transition: transform .5s;
+}
+
+#hero-section i:hover {
+  transform: translateY(10px);
+  color: #4ccb88;
+}
+
+/* NAV BAR */
+#nav-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+#nav-section a {
+  color: #1d1b21;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  padding-right: 38px;
+  transition: transform .75s;
+}
+
+#nav-section a:hover {
+  transform: translateY(10px);
+  color: #4ccb88;
+}
+
+/**ABOUT ME**/
+#about-me {
   display: flex;
-  flex-flow: row wrap-reverse;
-  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 80px;
 }
 
-.subtitle {
-  flex: 2;
-  padding: 48px 64px 48px 0;
-  min-width: 300px;
+.about-me-text {
+  flex: 1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  align-items: center;
 }
 
-.image {
+.about-me-image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -70,52 +119,36 @@ a {
 
 img {
   border-radius: 50%;
+  border: 12px solid #ff5851;
   height: 275px;
   width: 275px;
 }
 
-.subtitle-text {
-  font-size: 18px;
-  color: #666666;
+/**PROJECTS**/
+
+#projects {
+  font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
+  padding: 24px 64px 0 0;
+  min-width: 300px;
 }
 
-.main-section {
-  display: flex;
-  flex-flow: row wrap-reverse;
-  justify-content: center;
+#projects a {
+  color: #ff5851;
 }
 
-.project-section {
-  flex: 2;
-  padding-right: 48px;
+.project-card {
+  padding-bottom: 48px;
 }
 
-.skills-contact-section {
-  flex: 1;
-  display: flex;
-  flex-flow: column wrap-reverse;
+.project-card-title {
+  font-weight: bold;
 }
 
-/**skills section**/
-.skills-section {
-  flex: 5;
-}
 
-.skills-list {
-  color: #666666;
-  font-family: 'IBM Plex Sans', sans-serif;
-  display: flex;
-  flex-flow: row nowrap;
-  line-height: 30px;
-}
+/* CONTACT */
 
-.skills-backend {
-  padding-left: 64px;
-}
-
-/**contact icon section**/
-.contact-section {
+#contact {
   flex: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -131,7 +164,7 @@ img {
   flex-direction: column;
   padding-right: 16px;
   padding-left: 16px;
-  transition: transform .25s; /* Animation */
+  transition: transform .25s;
 }
 
 .contact-item:hover {
@@ -157,23 +190,6 @@ img {
   padding-left: 0;
 }
 
-/**project section**/
-
-.project-section {
-  color: #666666;
-  font-size: 16px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  padding: 24px 64px 0 0;
-  min-width: 300px;
-}
-
-.project-card {
-  padding-bottom: 48px;
-}
-
-.project-card-title {
-  font-weight: bold;
-}
 
 .copyright-section {
  color: #4a4a4a;
@@ -226,7 +242,7 @@ img {
   }
 }
 
-
+/*
 @media only screen and (max-width: 762px) {
   .title {
     padding-bottom: 48px;
@@ -246,9 +262,9 @@ img {
   .project-section {
     padding-right: 0;
   }
-}
+} */
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   body {
     border: 10px #4ccb88 solid;
     margin: 0;
@@ -284,4 +300,4 @@ img {
   .contact-item .item-name {
     font-size: 14px;
   }
-}
+} */

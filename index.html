@@ -10,112 +10,137 @@
 </head>
 
 <body>
-  <div class='hero-section'>
-    <h1 class='title'>Hi, my name is Devis [dev-ee]!</h1>
+  <div id='hero-section'>
+    <div class='hero-intro'>
+      <h1 class='title'>Hello World!</h1>
+      <h2 class='subtitle'>My name is <span class='devis'>Devis [dev-ee]</span>. I'm a Full Stack Software Engineer.</h2>
 
-    <div class='intro'>
-
-      <div class='subtitle'>
-        <div class='subtitle-text'>
-          I'm a Software Engineer living in Brooklyn, NY.
-          <br>
-          <br>
-          I have a passion for building beautiful, user friendly applications. My experience with Javascript, Node, Express, and PostgreSQL makes me comfortable working throughout the stack.
-          <br>
-          <br>
-          In my free time I love tending to my tiny garden, solving jigsaw puzzles, and chasing my dogs around the New York City area.
-          <br>
-          <br>
-          I'm currently open to new opportunities and would love to hear from you if you would like to collaborate.
-        </div>
-      </div>
-
-      <div class='image'>
-        <img src='https://dev-mejia-portfolio.s3.amazonaws.com/IMG_53812.jpg'/>
-      </div>
-
+      <div class='hero-down'>
+        <a href="#nav-section">
+          <i class="fa fa-chevron-down"></i>
+        </a>
+    </div>
     </div>
   </div>
 
-    <div class='main-section'>
+  <div id="nav-section">
+    <div class='nav-bar'>
+      <a href="#about-me">About Me</a>
+      <a href="#projects">My Work</a>
+      <a href="#contact">Say Hi</a>
+    </div>
 
-      <div class='project-section'>
+  </div>
 
-        <div class='section-title'>What I've Built</div>
-        <div class='project-card'>
-            <div class='project-card-title'>Living ARt</div>
-            <div class='project-card-description'>
-              Developer | <a href='https://bit.ly/2YdEaNf' target='_blank'>GitHub</a>
-              <br><br>
-              Mobile app built using React Native and Viro Media. Bringing art to life through AR, VR, animations and sound.
-              <br><br>
-              On the frontend, I designed and built the main and list view components. Each screen makes API requests to a PostgreSQL database to load museums and artwork at the selected museum.
-              <br><br>
-              Living ARt makes use of Viro Media's image recognition API which made it possible to load AR and VR scenes that included animated versions of paintings. Along with animations, an audio description of the painting is also available to play.
-              <br><br>
-              Tech Used: React Native, Viro Media, Node.js, Express.js, PostgreSQL, Sequelize, Heroku, After Effects, AWS
-              <br><br>
-              <a href='http://bitly.com/livingARt' target='_blank'>Learn more</a>
-            </div>
-          </div>
+  <div id="about-me">
+    <div class='about-me-text'>
+      I have a passion for building beautiful, user friendly applications. My experience with Javascript, Node, Express, and PostgreSQL makes me comfortable working throughout the stack.
+      <br>
+      <br>
+      In my free time I love tending to my tiny garden, solving jigsaw puzzles, and chasing my dogs around the New York City area.
+      <br>
+      <br>
+      I'm currently open to new opportunities and would love to hear from you if you would like to collaborate.
+    </div>
 
-          <div class='project-card'>
-            <div class='project-card-title'><b>OFFSET</b></div>
-            <div class='project-card-description'>
-              Sole Developer | <a href='https://bit.ly/2OrEJhN' target='_blank'>GitHub</a>
-              <br><br>
-              A native mobile app aimed at brining awareness to your plastic comsumption by allowing you to track the amount of single use bottles you use agains the number of times you use a resuable bottle.
-              <br><br>
-              Compatible on both iOS & Android, this full stack mobile app includes screens for signing up, loging in, a main screen to track your uses,and a personal profile.
-              <br><br>
-              Tech Used: Javascript, React Native, Node.js, Express.js, PostgreSQL & Sequelize
-            </div>
-          </div>
+    <div class='about-me-image'>
+      <img src='https://dev-mejia-portfolio.s3.amazonaws.com/IMG_53812.jpg'/>
+    </div>
 
-          <div class='project-card'>
-            <div class='project-card-title'><b>Pattie's Potions</b></div>
-            <div class='project-card-description'>
-              Developer | <a href='https://bit.ly/2q9Sr0P' target='_blank'>GitHub</a>
-              <br><br>
-              Mock e-commerce website selling magical potions.
-              <br><br>
-              Built API routes and React components for all products view, single product view, & checkout page
-              <br><br>
-              Tech Used: Javascript, React-Redux, CSS3, Node.js, Express.js, Postgres & Sequelize, Heroku
-            </div>
-          </div>
+  </div>
+
+  <div id="projects">
+    <div class='project-card'>
+      <div class='project-card-title'>Living ARt</div>
+      <div class='project-card-description'>
+        Contributing Developer | <a href='https://bit.ly/2YdEaNf' target='_blank'>GitHub</a>
+        <br><br>
+        Mobile app built using React Native and Viro Media. Bringing art to life through AR, VR, animations and sound.
+        <br><br>
+        On the frontend, I designed and built the main and list view components. Each screen makes API requests to a PostgreSQL database to load museums and artwork at the selected museum.
+        <br><br>
+        Living ARt makes use of Viro Media's image recognition API which made it possible to load AR and VR scenes that included animated versions of paintings. Along with animations, an audio description of the painting is also available to play.
+        <br><br>
+        Tech Used: React Native, Viro Media, Node.js, Express.js, PostgreSQL, Sequelize, Heroku, After Effects, AWS
+        <br><br>
+        <a href='http://bitly.com/livingARt' target='_blank'>Learn more</a>
       </div>
+    </div>
+
+    <div class='project-card'>
+      <div class='project-card-title'><b>OFFSET</b></div>
+      <div class='project-card-description'>
+        Sole Developer | <a href='https://bit.ly/2OrEJhN' target='_blank'>GitHub</a>
+        <br><br>
+        A native mobile app aimed at brining awareness to your plastic comsumption by allowing you to track the amount of single use bottles you use agains the number of times you use a resuable bottle.
+        <br><br>
+        Compatible on both iOS & Android, this full stack mobile app includes screens for signing up, loging in, a main screen to track your uses,and a personal profile.
+        <br><br>
+        Tech Used: Javascript, React Native, Node.js, Express.js, PostgreSQL & Sequelize
+      </div>
+    </div>
+
+    <div class='project-card'>
+      <div class='project-card-title'><b>Pattie's Potions</b></div>
+      <div class='project-card-description'>
+        Contributing Developer | <a href='https://bit.ly/2q9Sr0P' target='_blank'>GitHub</a>
+        <br><br>
+        Mock e-commerce website selling magical potions.
+        <br><br>
+        Built API routes and React components for all products view, single product view, & checkout page
+        <br><br>
+        Tech Used: Javascript, React-Redux, CSS3, Node.js, Express.js, Postgres & Sequelize, Heroku
+      </div>
+    </div>
+
+  </div>
+
+  <div id="contact">
+    <div class='contact-item'>
+      <a href="https://github.com/damejia100" target="_blank">
+        <i class="fa fa-github"></i>
+        <div class='item-name'>GitHub</div>
+      </a>
+    </div>
+
+    <div class='contact-item'>
+        <a href="mailto:devismejia@gmail.com" target="_blank">
+          <i class="fa fa-envelope"></i>
+          <div class='item-name'>Email</div>
+        </a>
+    </div>
+
+    <div class='contact-item'>
+      <a href="https://www.linkedin.com/in/devismejia/" target="_blank">
+        <i class="fa fa-linkedin"></i>
+        <div class='item-name'>LinkedIn</div>
+      </a>
+    </div>
+
+    <div class='contact-item'>
+      <a href="Devis Mejia - Resume.pdf" target="_blank">
+        <i class="fa fa-file"></i>
+        <div class='item-name'>Resume</div>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- <div class='hero-section'>
+
+    <div class='intro'>
+
+
+
+    </div>
+  </div> -->
+
+    <!-- <div class='main-section'>
 
       <div class='skills-contact-section'>
 
           <div class='contact-section'>
-              <div class='contact-item'>
-                <a href="https://github.com/damejia100" target="_blank">
-                  <i class="fa fa-github"></i>
-                  <div class='item-name'>GitHub</div>
-                </a>
-              </div>
 
-              <div class='contact-item'>
-                  <a href="mailto:devismejia@gmail.com" target="_blank">
-                    <i class="fa fa-envelope"></i>
-                    <div class='item-name'>Email</div>
-                  </a>
-              </div>
-
-              <div class='contact-item'>
-                <a href="https://www.linkedin.com/in/devismejia/" target="_blank">
-                  <i class="fa fa-linkedin"></i>
-                  <div class='item-name'>LinkedIn</div>
-                </a>
-              </div>
-
-              <div class='contact-item'>
-                <a href="Devis Mejia - Resume.pdf" target="_blank">
-                  <i class="fa fa-file"></i>
-                  <div class='item-name'>Resume</div>
-                </a>
-              </div>
           </div>
 
           <div class='skills-section'>
@@ -135,7 +160,7 @@
 
       </div>
 
-    </div>
+    </div> -->
 
     <div class="copyright-section">
         COPYRIGHT © 2020 DEVIS MEJIA  |  MADE WITH <span class='heart'>♥︎</span> IN BROOKLYN, NY
