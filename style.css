@@ -7,6 +7,7 @@ font-family: 'IBM Plex Sans', sans-serif;
 gray: #f8f8f8
 dark blue: #1d1b21
 mint: #4ccb88
+grayish purple: #414a6b
 */
 
 body {
@@ -28,10 +29,6 @@ body {
   bottom: 0;
 }
 
-ul {
-  padding-left: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -39,7 +36,9 @@ a {
 /* HERO  */
 #hero-section {
   height: 100vh;
-  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-intro {
@@ -101,6 +100,7 @@ a {
 #about-me {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 80px;
 }
 
@@ -111,15 +111,19 @@ a {
   align-items: center;
 }
 
+.pups a{
+  color: #ff5851;
+}
+
 .about-me-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-img {
+#about-me img {
   border-radius: 50%;
-  border: 12px solid #ff5851;
+  border: 12px solid #4ccb88;
   height: 275px;
   width: 275px;
 }
@@ -127,22 +131,43 @@ img {
 /**PROJECTS**/
 
 #projects {
-  font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
-  padding: 24px 64px 0 0;
-  min-width: 300px;
 }
 
 #projects a {
-  color: #ff5851;
+  color: #1d1b21;
+}
+
+#projects img {
+  max-width: 500px;
 }
 
 .project-card {
-  padding-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-left {
+  flex: 1;
+}
+
+.project-right {
+  flex: 1;
 }
 
 .project-card-title {
+  color: #1d1b21;
   font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 12px;
+}
+
+#projects .colored {
+  background-color: #ff5851;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 2px;
 }
 
 
@@ -241,63 +266,3 @@ img {
     opacity: 0;
   }
 }
-
-/*
-@media only screen and (max-width: 762px) {
-  .title {
-    padding-bottom: 48px;
-  }
-  .subtitle {
-    padding-right: 0;
-  }
-  .subtitle-text {
-    padding-bottom: 24px;
-  }
-  .contact-section {
-    padding: 24px 0 48px 0;
-  }
-  .contact-section {
-    justify-content: center;
-  }
-  .project-section {
-    padding-right: 0;
-  }
-} */
-
-/* @media only screen and (max-width: 640px) {
-  body {
-    border: 10px #4ccb88 solid;
-    margin: 0;
-    padding: 80px 50px 40px 50px;
-    height: 100%;
-    line-height: 24px;
-  }
-  img {
-    width: 250px;
-    height: 250px;
-  }
-  #bottom {
-    height: 10px;
-  }
-  .subtitle-text {
-    font-size: 16px;
-
-  }
-  .skills-section {
-    padding-bottom: 24px;
-  }
-  .contact-section {
-    padding-top: 24px;
-    padding-bottom: 48px;
-    justify-content: space-around;
-  }
-  .contact-item {
-    padding: 0 8px;
-  }
-  .contact-item i {
-    font-size: 28px;
-  }
-  .contact-item .item-name {
-    font-size: 14px;
-  }
-} */
