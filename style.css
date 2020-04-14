@@ -80,7 +80,6 @@ a {
 #nav-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 20px;
 }
 
 #nav-section a {
@@ -96,17 +95,6 @@ a {
   font-size: 22px;
   padding-right: 38px;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
 
 .nav-bar {
   display: flex;
@@ -127,10 +115,14 @@ a {
   justify-content: space-between;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 /* CONTACT ICONS*/
 
 .contact-item {
-  font-weight: bold;
   font-family: 'IBM Plex Mono', monospace;
   display: flex;
   flex-direction: column;
@@ -150,16 +142,12 @@ a {
 
 .contact-item i {
   font-size: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
 
 .contact-item .item-name {
   font-size: 16px;
   font-weight: 500;
-}
-
-.container.contact > div:nth-child(1) {
-  padding-left: 0;
 }
 
 /**ABOUT ME**/
