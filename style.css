@@ -217,6 +217,7 @@ a {
 
 #projects img {
   max-width: 500px;
+  max-height: 500px;
 }
 
 .project-card {
@@ -376,6 +377,7 @@ a {
   }
   #projects img {
     max-width: 400px;
+    max-height: 400;
   }
   #projects .colored {
     flex-direction: column;
@@ -461,6 +463,7 @@ a {
   }
   #projects img {
     max-width: 300px;
+    max-height: 300px;
   }
   #reach-out {
     margin: 24px;
@@ -487,6 +490,7 @@ a {
   }
   #projects img {
     max-width: 225px;
+    max-height: 225px;
   }
   #about-me {
     padding: 75px 16px;
